@@ -23,3 +23,4 @@ Before deployment, replace the example `ADMIN_KEY` with a strong secret. The SQL
 - Admin data is protected by the `x-admin-key` header.
 - All visual assets are local SVGs; no external image hosting is required.
 - The default content is demo/placeholder agency content and should be replaced with verified client work before public launch.
+"# presszila00" 
