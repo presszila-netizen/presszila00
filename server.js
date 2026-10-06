@@ -312,8 +312,8 @@ app.get("/api/admin/inquiries", (req, res) => {
 ========================= */
 
 const pages = {
-  "/": "home.html",
-  "/home.html": "home.html",
+  "/": "index.html",
+  "/index.html": "index.html",
   "/about.html": "about.html",
   "/solutions.html": "solutions.html",
   "/case-studies.html": "case-studies.html",
