@@ -113,6 +113,16 @@ function clean(value, maxLength = 2000) {
    HEALTH CHECK
 ========================= */
 
+
+app.get("/api/check-logo", (_req, res) => {
+  const logoPath = path.join(publicDir, "assets", "images", "press.png");
+
+  res.json({
+    exists: fs.existsSync(logoPath),
+    path: logoPath
+  });
+});
+
 app.get("/api/health", (_req, res) => {
   res.json({
     ok: true,
@@ -120,6 +130,7 @@ app.get("/api/health", (_req, res) => {
     status: "running"
   });
 });
+
 
 /* =========================
    CONTACT / QUOTE FORM
