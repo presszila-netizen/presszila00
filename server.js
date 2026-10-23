@@ -115,11 +115,17 @@ function clean(value, maxLength = 2000) {
 
 
 app.get("/api/check-logo", (_req, res) => {
-  const logoPath = path.join(publicDir, "assets", "images", "press.png");
+  const jpgPath = path.join(
+    publicDir, "assets", "images", "press.jpg"
+  );
+
+  const pngPath = path.join(
+    publicDir, "assets", "images", "press.png"
+  );
 
   res.json({
-    exists: fs.existsSync(logoPath),
-    path: logoPath
+    jpgExists: fs.existsSync(jpgPath),
+    pngExists: fs.existsSync(pngPath)
   });
 });
 
